@@ -1,0 +1,95 @@
+#content {
+    width: 100%;
+}
+
+.new-kind-of-money {
+    background-size: cover;
+    width: 100%;
+    height: 75rem;
+    @include media-breakpoint-down(md) {
+        height: 35rem;
+    }
+    > .container {
+        height: 100%;
+    }
+    .new-kind-of-money__content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        @include media-breakpoint-up(md) {
+            width: 30rem;
+            float: right; 
+        }
+        > span {
+            color: $primary-red;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 3.4rem;
+            color: $primary-black;
+        }
+        .field--type-text-long {
+            font-size: 1.4rem;
+            color: darken($primary-lightgrey, 30%); 
+        }
+        .field--name-field-link a {
+            @include button-red();
+            margin-top: 2rem;
+        }
+    }
+}
+
+/* Paragraph type css starts */
+
+.field--name-field-simple-paragraph {
+    background: #f5f6f8;
+    padding: 5rem 0;
+    @include media-breakpoint-up(md) {
+        background: url('../images/bag-paragraph.jpg') no-repeat center center #f5f6f8;
+        padding: 20rem 0;
+    }
+    .field__label {
+        display: none;
+    }
+    .field__items {
+        @include container();
+        @include media-breakpoint-up(md) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        > .field__item {
+            margin-bottom: 2.5rem;
+            @include media-breakpoint-down(md) {
+                text-align: center;
+            }
+            @include media-breakpoint-up(md) {
+                &:nth-child(odd) {
+                    padding-left: 5rem;
+                }
+                &:nth-child(even) {
+                    text-align: right;
+                    padding-right: 5rem;
+                }
+                &:nth-child(3) {
+                    padding-left: 0;
+                }
+                &:nth-child(4) {
+                    padding-right: 0;
+                }
+            }
+            .field--name-field-title {
+                font-weight: 700;
+                margin: 5px 0 1rem;
+            }
+        }
+        .paragraph--type--home-page {
+            text-align: center;
+            @include media-breakpoint-up(md) {
+                width: 20rem;
+            }
+            display: inline-block;
+        }
+    }
+}

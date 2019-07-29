@@ -1,0 +1,13 @@
+.hc-event-news .hc-event-news__content {
+  text-align: center;
+}
+
+.hc-event-news .hc-event-news__image img {
+  height: auto;
+  max-width: 100%;
+}
+
+.hc-event-news .hc-event-news__desc {
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+}

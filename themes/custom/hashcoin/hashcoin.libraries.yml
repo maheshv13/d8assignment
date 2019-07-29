@@ -1,0 +1,15 @@
+global-css:
+  css:
+    theme:
+      css/font-awesome.css: {}
+      css/bootstrap.css: {}
+      css/style.css: {}
+
+global-js: 
+    js:
+      js/jquery-3.4.1.min.js: {}
+      js/popper.min.js: {}
+      js/bootstrap.min.js: {}
+      js/jquery.cycle.all.js: {}
+      js/script.js: {}
+

@@ -1,0 +1,131 @@
+.header-top {
+    display: flex;
+    border-bottom: 1px solid $primary-lightgrey;
+    box-shadow: 0 0 2px darken($primary-lightgrey, 20%);
+    padding-bottom: 2rem;
+    .header__social-icon {
+        display: flex;
+        @include media-breakpoint-down(md) {
+            margin-top: 2rem;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $primary-lightgrey;
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0 5px;
+            transition: .3s;
+            &.icon-facebook {
+                color: $icon-facebook-color;
+                &:hover,
+                &:focus {
+                    background: $icon-facebook-color;
+                }
+            }
+            &.icon-twitter {
+                color: $icon-twitter-color;
+                &:hover,
+                &:focus {
+                    background: $icon-twitter-color;
+                }
+            }
+            &.icon-google {
+                color: $icon-google-color;
+                &:hover,
+                &:focus {
+                    background: $icon-google-color;
+                }
+            }
+            &.icon-linkedin {
+                color: $icon-linkedin-color;
+                &:hover,
+                &:focus {
+                    background: $icon-linkedin-color;
+                }
+            }
+            &.icon-youtube {
+                color: $icon-youtube-color;
+                &:hover,
+                &:focus {
+                    background: $icon-youtube-color;
+                }
+            }
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.navbar {
+    padding: 1.5rem 1rem;
+}
+
+.navbar-expand-md .navbar-collapse {
+    justify-content: center;
+    a {
+        color: $primary-black;
+        font-size: 1.6rem;
+        font-weight: $font-wt-bold;
+        text-transform: uppercase;
+        padding: 12px 20px;
+        &.is-active {
+            color: #bf3554;
+        }
+    }
+}
+
+article p a {
+    @include button-default();
+}
+
+/* Search css */
+
+.hc-search {
+    #block-searchform > h2 {
+        display: none;
+    }
+    #search-block-form {
+        width: 26rem;
+        margin: 0 auto;
+        position: relative;
+        input[type="search"] {
+            border: 1px solid $primary-lightgrey;
+            padding: .8rem 1.5rem;
+            border-radius: 2.5rem;
+            width: 100%;
+            color: $primary-black;
+            box-sizing: border-box;
+        }
+        .form-actions {
+            position: absolute;
+            top: 9px;
+            right: 12px;
+        }
+        .form-submit {
+            background: url('../images/icon-search.png') no-repeat;
+            width: 2.4rem;
+            height: 2.4rem;
+            text-indent: -9999px;
+            border: none;
+        }
+    }
+}
+
+header.header {
+    .navbar {
+        @include media-breakpoint-down(md) {
+            justify-content: flex-end;
+        }        
+    }
+    .logo {
+        @include media-breakpoint-down(md) {
+            margin: 20px 0;
+        }
+    }
+}

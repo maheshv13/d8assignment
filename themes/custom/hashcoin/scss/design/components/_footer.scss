@@ -1,0 +1,114 @@
+.footer {
+    background: $primary-black;
+    padding: 10rem 0;
+    color: #fff;
+    .footer-logo {
+        background: url('../images/footer-logo.png') no-repeat;
+        width: 13.5rem;
+        height: 15.3rem;
+        display: inline-block;
+        padding: 15px 0;
+        margin-bottom: 32px;
+    }
+    .region-footerblog,
+    .region-footeraddress,
+    .region-footernewsletter {
+        h2 {
+            font-size: 3.2rem;
+        }
+    }
+    .field--type-text-with-summary {
+        p {
+            &:nth-child(1){
+                color: $primary-lightgrey;
+            }
+        }
+    }
+    .header__social-icon {
+        display: flex;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $primary-lightgrey;
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0 5px;
+            transition: .3s;
+            &.icon-facebook {
+                color: $icon-facebook-color;
+                &:hover,
+                &:focus {
+                    background: $icon-facebook-color;
+                }
+            }
+            &.icon-twitter {
+                color: $icon-twitter-color;
+                &:hover,
+                &:focus {
+                    background: $icon-twitter-color;
+                }
+            }
+            &.icon-google {
+                color: $icon-google-color;
+                &:hover,
+                &:focus {
+                    background: $icon-google-color;
+                }
+            }
+            &.icon-linkedin {
+                color: $icon-linkedin-color;
+                &:hover,
+                &:focus {
+                    background: $icon-linkedin-color;
+                }
+            }
+            &.icon-youtube {
+                color: $icon-youtube-color;
+                &:hover,
+                &:focus {
+                    background: $icon-youtube-color;
+                }
+            }
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
+    input[type="text"], 
+    input[type="email"] {
+        text-align: left;
+        background: url(../images/icon-footer-message.png) no-repeat #fff;
+        background-position: right 8px;
+        border-radius: 2.5rem;
+    }
+    input[type="text"]::-webkit-input-placeholder,
+    input[type="email"]::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        text-align: left;
+    }
+    input[type="text"]::-moz-placeholder,
+    input[type="email"]::-moz-placeholder,
+    textarea::-moz-placeholder { /* Firefox 19+ */
+        text-align: left;
+    }
+    input[type="text"]:-ms-input-placeholder,
+    input[type="email"]:-ms-input-placeholder,
+    textarea:-ms-input-placeholder { /* IE 10+ */
+        text-align: left;
+    }
+    .region-footerblog,
+    .region-footeraddress,
+    .region-footernewsletter {
+        @include media-breakpoint-down(md) {
+           margin-bottom: 3.5rem;
+        }
+        .field__item > a {
+            color: #fff;
+            margin-bottom: 12px; 
+        }
+    }
+}

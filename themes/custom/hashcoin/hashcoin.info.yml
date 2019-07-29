@@ -1,0 +1,25 @@
+name: Hascoin
+type: theme
+base theme: classy
+Description: "A modern & responsive Drupal 8 Theme"
+package: custom
+core: 8.x
+
+regions:
+    navigation: 'Navigation'
+    navigation_collapsible: 'Navigation (Collapsible)'
+    sidebar: sidebar
+    headline: headline
+    headertop: headertop
+    searchbox: searchbox
+    header: header
+    banner: banner
+    content: content
+    footer: Footer
+    footerblog: footerblog
+    footeraddress: footeraddress
+    footernewsletter: footernewsletter
+
+libraries:
+    - hashcoin/global-css
+    - hashcoin/global-js
